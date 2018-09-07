@@ -1,0 +1,535 @@
+/*<!--头部-->*/
+.header {
+	width: 375px;
+	height: 37px;
+	background: #FF852A;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.logo{
+	width: 37px;
+	height: 37px;
+	background-image: url(../img/logo.png);
+	background-size: 80% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('../img/iconfont.eot');
+	src: url('../img/iconfont.eot?#iefix') format('embedded-opentype'), 
+	url('../img/iconfont.woff') format('woff'), 
+	url('../img/iconfont.ttf') format('truetype'), 
+	url('../img/iconfont.svg#iconfont') format('svg');
+}
+
+.header .iconfont {
+	font-family: "iconfont" !important;
+	font-size: 13px;
+	color: #F0E0DC;
+	line-height: 25px;
+}
+
+.search {
+	width: 324px;
+	height: 25px;
+	background-color: #FF4E22;
+	text-align: center;
+	border-radius: 4px;
+	margin-left: 4px;
+}
+a {
+	text-decoration: none;
+}
+
+/*<!--轮播图-->*/
+.wrapper {
+	position: relative;
+	margin-top: 37px;
+}
+
+.wrapper img {
+	width: 375px;
+	height: auto;
+}
+
+.wrapper:after {
+	content: '';
+	width: 375px;
+	height: 13px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-image: url(../img/huxian.webp);
+	background-size: 100% auto;
+}
+
+/*<!--图标列表-->*/
+.IconList{
+	width: 375px;
+	height: 160px;
+}
+.row{
+	width: 375px;
+	display: flex;
+	justify-content: space-around;
+}
+.IconList .item{
+	width: 61px;
+	height: 67px;
+}
+.IconList .item .icon{
+	width: 61px;
+	height: 48px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.IconList .item .icontext{
+	width: 61px;
+	height: 14px;
+	color: rgb(102, 102, 102);
+	font-size: 11px;
+	text-align: center;
+	line-height: 14px;
+	margin-top: 5px;
+}
+.IconList .icontop .item:nth-child(1) .icon{
+	background-image: url(../img/tianmao.webp);
+}
+.IconList .icontop .item:nth-child(2) .icon{
+	background-image: url(../img/jhs.png);
+}
+.IconList .icontop .item:nth-child(3) .icon{
+	background-image: url(../img/tmgj.png);
+}
+.IconList .icontop .item:nth-child(4) .icon{
+	background-image: url(../img/wm.png);
+}
+.IconList .icontop .item:nth-child(5) .icon{
+	background-image: url(../img/market.webp);
+}
+.IconList .iconbottom .item:nth-child(1) .icon{
+	background-image: url(../img/czzx.webp);
+}
+.IconList .iconbottom .item:nth-child(2) .icon{
+	background-image: url(../img/fzlx.png);
+}
+.IconList .iconbottom .item:nth-child(3) .icon{
+	background-image: url(../img/ljb.png);
+}
+.IconList .iconbottom .item:nth-child(4) .icon{
+	background-image: url(../img/pm.png);
+}
+.IconList .iconbottom .item:nth-child(5) .icon{
+	background-image: url(../img/fl.png);
+}
+
+/*<!--淘宝头条-->*/
+.toutiao{
+	width: 375px;
+	height: 60px;
+	display: flex;
+}
+.toutiao .left{
+	width: 58px;
+	height: 60px;
+	background-image: url(../img/toutiao.webp);
+	background-size: 60% 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.toutiao .mid{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.toutiao .midrow{
+	width: 232px;
+	height: 30px;
+	display: flex;
+	line-height: 30px;
+}
+.toutiao .midrow .tag{
+	width: 28px;
+	height: 13px;
+	line-height: 13px;
+	margin-top: 7.5px;
+	font-size: 10.5px;
+	color: rgb(230, 10, 31);
+	border: 1px solid rgb(230, 10, 31);
+	border-radius: 3px;
+	margin-left: 4px;
+	display: flex;
+	justify-content: center;
+}
+.toutiao .midrow .text{
+	color: rgb(51, 51, 51);
+	font-size: 12px;
+	flex: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.toutiao .right{
+	width: 85px;
+	height: 60px;
+	background-image: url(../img/ttright.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.toutiao .right:after{
+	content: '';
+	width: 85px;
+	height: 60px;
+	background-image: url(../img/touming.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*<!--抢购-->*/
+.qianggou{
+	width: 375px;
+	height: 224px;
+	display: flex;
+	flex-direction: column;
+}
+.qianggou .qgrow{
+	width: 375px;
+	height: 112px;
+	display: flex;
+	
+}
+.qianggou .qgrow .qgitem{
+	width: 93.75px;
+	height: 112px;
+	background-size: 100% 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.qianggou .row1 .qgitem:nth-child(1){
+	background-image: url(../img/qghq.webp);
+	background-position: center 50px;
+}
+.qianggou .row1 .qgitem:nth-child(2){
+	background-image: url(../img/qgs.webp);
+	background-size: 100% 100%;
+}
+.qianggou .row1 .qgitem:nth-child(3){
+	background-image: url(../img/qgxz.webp);
+	background-position: center 50px;
+}
+.qianggou .row1 .qgitem:nth-child(4){
+	background-image: url(../img/qgqz.webp);
+	background-size: 100% 100%;
+}
+.qianggou .row2 .qgitem:nth-child(1){
+	background-image: url(../img/qgsb.webp);
+	background-position: center 50px;
+}
+.qianggou .row2 .qgitem:nth-child(2){
+	background-image: url(../img/qgxlx.webp);
+	background-size: 100% 100%;
+}
+.qianggou .row2 .qgitem:nth-child(3){
+	background-image: url(../img/qgsj.webp);
+	background-position: center 50px;
+}
+.qianggou .row2 .qgitem:nth-child(4){
+	background-image: url(../img/qglz.webp);
+	background-size: 100% 100%;
+}
+.qianggou .row1 .qgitem:nth-child(1):before{
+	content: '淘抢购';
+	width: 93.75px;
+	height: 50px;
+	color: red;
+	line-height: 50px;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: 5px;	
+}
+.qianggou .row1 .qgitem:nth-child(3):before{
+	content: '有好货';
+	width: 93.75px;
+	height: 30px;
+	color: skyblue;
+	line-height: 50px;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: 5px;	
+}
+.qianggou .row1 .qgitem:nth-child(3):after{
+	content: '高颜值美物';
+	width: 93.75px;
+	height: 13px;
+	color: #969896;
+	line-height: 50px;
+	font-size: 13px;
+	position: absolute;
+	top: 16px;
+	left: 6px;	
+}
+.qianggou .row2 .qgitem:nth-child(1):before{
+	content: '爱逛街';
+	width: 93.75px;
+	height: 30px;
+	color: hotpink;
+	line-height: 50px;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: 5px;	
+}
+.qianggou .row2 .qgitem:nth-child(1):after{
+	content: '2018流行啥';
+	width: 93.75px;
+	height: 13px;
+	color: #969896;
+	line-height: 50px;
+	font-size: 13px;
+	position: absolute;
+	top: 16px;
+	left: 6px;	
+}
+.qianggou .row2 .qgitem:nth-child(3):before{
+	content: '必买清单';
+	width: 93.75px;
+	height: 30px;
+	color: palevioletred;
+	line-height: 50px;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: 5px;	
+}
+.qianggou .row2 .qgitem:nth-child(3):after{
+	content: '帮你整理好';
+	width: 93.75px;
+	height: 13px;
+	color: #969896;
+	line-height: 50px;
+	font-size: 13px;
+	position: absolute;
+	top: 16px;
+	left: 6px;	
+}
+
+/*淘宝直播*/
+.zhibo{
+	width: 375px;
+	height: 352.5px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+	position: relative;
+}
+.zhibo .zbtop,.zhibo .zbmid{
+	width: 375px;
+	height: 125.5px;
+	display: flex;
+}
+.zhibo .zbtop .left{
+	width: 249.5px;
+	height: 125.5px;
+	background-image: url(../img/zbtl.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.zhibo .zbtop .touming{
+	width: 249.5px;
+	height: 125.5px;
+	background-image: url(../img/zbtltm.webp);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.zhibo .zbtop .right{
+	width: 125px;
+	height: 125.5px;
+	background-image: url(../img/zbtr.webp);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.zhibo .zbtop h2{
+	width: 140px;
+	height: 17px;
+	font-size: 14px;
+	line-height: 17px;
+	color: rgb(255, 255, 255);
+	position: absolute;
+	top: 84px;
+	left: 10px;
+	z-index: 10;
+}
+.zhibo .zbtop p{
+	width: 200px;
+	height: 17px;
+	font-size: 12px;
+	line-height: 17px;
+	color: rgb(255, 255, 255);
+	opacity: 0.8;
+	position: absolute;
+	top: 103px;
+	left: 10px;
+	text-align: left;
+	z-index: 10;
+}
+.zhibo .zbmid .left{
+	width: 124.5px;
+	height: 125.5px;
+	background-image: url(../img/zbml.webp);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.zhibo .zbmid .mid{
+	width: 125px;
+	height: 125.5px;
+	background-image: url(../img/zbmm.webp);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.zhibo .zbmid .right{
+	width: 125px;
+	height: 125.5px;
+	background-image: url(../img/zbmr.webp);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.zhibo .zbbottom{
+	width: 375px;
+	height: 55px;
+	display: flex;
+}
+.zhibo .zbbottom div{
+	width: 124.5px;
+	height: 55px;
+}
+.zhibo .zbbottom h6{
+	display: inline-block;
+	font-size: 14px;
+	color: rgb(51, 51, 51);
+	line-height: 17px;
+	text-align: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.zhibo .zbbottom p{
+	display: inline-block;
+	font-size: 12px;
+	color: rgb(153, 153, 153);
+	line-height: 15px;
+	opacity: 0.8;
+	text-align: left;
+	margin-top: 5px;
+	margin-left: 12px;
+}
+.zhibo:before{
+	content: '';
+	width: 375px;
+	height: 29px;
+	background-image: url(../img/tbzb.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: -14px;
+	z-index: 10;
+}
+.zhibo .zbtop:after{
+	content: '';
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/aixin.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 94px;
+	left: 210px;
+	z-index: 10;
+}
+.zhibo .zbmid div{
+	display: flex;
+	position: relative;
+}
+.zhibo .zbmid div:after{
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 14.5px;
+	background-image: url(../img/live.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
+
+/*底部*/
+.foot{
+	width: 375px;
+	height: 42px;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	justify-content: space-around;
+	background-color: #FFFFFF;
+	z-index: 100;
+	}
+.foot .icontext{
+	font-size: 12px;
+	color: #5d656b;
+}
+.foot .iconfont{
+	font-family: "iconfont" !important;
+	height: 22px;
+	font-size: 22px;
+	color: #5D656B;
+	line-height: 22px;
+	text-align: center;
+}
+.foot .iaf:nth-child(1) .iconfont{	
+	width: 24px;	
+}
+.foot .iaf:nth-child(2) .iconfont{
+	width: 24px;
+}
+.foot .iaf:nth-child(3) .iconfont{
+	width: 36px;
+}
+.foot .iaf:nth-child(4) .iconfont{
+	width: 48px;
+}
+.foot .iaf:nth-child(5) .iconfont{
+	width: 24px;
+}
